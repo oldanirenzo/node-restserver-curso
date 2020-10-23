@@ -29,7 +29,7 @@ app.post("/usuario", function(req, res) {
         })
     } else {
 
-        res.json({
+        res.status(201).json({
             persona: body
         });
     }
